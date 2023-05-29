@@ -19,8 +19,8 @@
             }
         }
 
-        public function getAllPokemons(){
-            $this->url = "https://pokeapi.co/api/v2/pokemon/";
+        public function getAllPokemons($start,$limit){
+            $this->url = "https://pokeapi.co/api/v2/pokemon/?limit=$limit&offset=$start.";
             $response = file_get_contents($this->url);
             if($response !== false){
                 $json = json_decode($response);
@@ -31,6 +31,19 @@
                 }
             } else {
                 return false;
+            }
+        }
+
+        public function getImageFromPokemon($position,$id){
+            switch($position){
+                case 'front':
+                    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$id.png";
+                break;
+                case 'back':
+                    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/$id.png";
+                break;
+                default:
+                    echo "Invalid Position";
             }
         }
 
