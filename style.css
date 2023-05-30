@@ -44,6 +44,7 @@ header ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 a {
@@ -113,7 +114,7 @@ a {
 }
 
 .box-pokemon .left-area img {
-    width: 300px;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
     transition: 0.5s;
 }
@@ -167,8 +168,6 @@ a {
 .box-pokemon .right-area .stats-area ul li:hover{
     padding: 10px;
 }
-
-
 
 .box-pokemon .right-area .stats-area ul li span {
    font-weight: bold;
@@ -516,4 +515,61 @@ a {
 
 .box-pokemon .right-area .stats-area ul li.steel {
     background-color:  rgb(113, 113, 113);
+}
+
+footer {
+    padding: 5px;
+    background-color: rgb(174, 0, 0);
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer span {
+    color: #fff;
+    font-size: 10px;
+}
+
+footer a {
+    color: #aaa;
+}
+
+@media only screen and (max-width: 1000px) {
+    .box-pokemon .right-area {
+        width: 100%;
+    }
+
+    .box-pokemon .right-area .stats-area ul li span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .box-pokemon {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .box-pokemon img {
+        width: 100%;
+        max-width: none;
+        min-width: none;
+    }
+
+    .box-pokemon .right-area {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 300px;
+        height: 300px;
+    }
 }
