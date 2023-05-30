@@ -22,17 +22,20 @@
 
             switch($_REQUEST['page']){
                 case 'home':
-                    $res = $pokemon->getAllPokemons(0,20);
+                    $res = $pokemon->getAllPokemons(0,24);
                     for($i = 0; $i < count($res->results);$i++){
                         $id = $i+1;
-                        echo "<div class='card'>
-                            <h1 class='name'>".strtoupper($res->results[$i]->name)."</h1>
-                            <img src=".$pokemon->getImageFromPokemon('front',$id).">
-                        </div>";
+                        echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
+                        <div class='card'>
+                            <div class='infoName'>
+                                <h1 class='name'>".strtoupper($res->results[$i]->name)."</h1>
+                            </div>
+                            <img src=".$pokemon->getImageFromPokemon('artwork',$id).">
+                        </div></a>";
                     }
                 break;
                 case 'pokemon-single-page':
-                    include("./page/pokemon.php");
+                    include("./page/pokemon-single-page.php");
                 break;
                 default:
                     echo "404 page not found";
@@ -46,3 +49,15 @@
     </footer>
 </body>
 </html>
+
+<!-- $res = $pokemon->getAllPokemons(0,24);
+                    for($i = 0; $i < count($res->results);$i++){
+                        $id = $i+1;
+                        echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
+                        <div class='card'>
+                            <div class='infoName'>
+                                <h1 class='name'>".strtoupper($res->results[$i]->name)."</h1>
+                            </div>
+                            <img src=".$pokemon->getImageFromPokemon('front',$id).">
+                        </div></a>";
+                    } -->
