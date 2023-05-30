@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>PHPdex</h1>
+        <h1>Pokedex</h1>
         <ul>
             <li><a href="?page=home">Home</a></li>
         </ul>
@@ -22,7 +22,7 @@
 
             switch($_REQUEST['page']){
                 case 'home':
-                    $res = $pokemon->getAllPokemons(0,24);
+                    $res = $pokemon->getAllPokemons(0,1010);
                     for($i = 0; $i < count($res->results);$i++){
                         $id = $i+1;
                         echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
@@ -44,9 +44,6 @@
 
         ?>
     </div>
-    <footer>
-        <p>Creditos a GabrielSanMac</p>
-    </footer>
 </body>
 </html>
 
