@@ -22,7 +22,7 @@
         $PokemonList = $res->results;
         $regex = '/^('.strtolower($_POST['search']).')\w+/';
         for($i = 0; $i < count($PokemonList);$i++){
-            if(preg_match($regex,$PokemonList[$i]->name) || $PokemonList[$i]->name == $_POST['search']){
+            if(preg_match($regex,$PokemonList[$i]->name) || $PokemonList[$i]->name == strtolower($_POST['search'])){
                 $id = $i+1;
                 $match++;
                 echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
