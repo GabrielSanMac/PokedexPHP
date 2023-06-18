@@ -3,17 +3,18 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    height: 10%;
 }
 
 .selectPageArea{
-    padding: 5px;
+    border: 2px solid #aaa;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .selectPageArea a {
-    padding: 5px;
-    border: 2px solid #aaa;
-    margin: 5px;
-    border-radius: 5px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     color: #aaa;

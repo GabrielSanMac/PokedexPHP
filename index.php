@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="./Components/selected-page-area/selected-page-area.css">
+    <link rel="stylesheet" href="./page/pokemon-single-page/pokemon-single-page.css">
+    <link rel="stylesheet" href="./Components/pokemon-card/pokemon-card.css">
+    <link rel="shortcut icon" href="./images/favicon.png">
     <title>PHPdex</title>
 </head>
 <body>
@@ -23,10 +26,10 @@
 
             switch($_REQUEST['page']){
                 case 'pokemon-single-page':
-                    include("./page/pokemon-single-page.php");
+                    include("./page/pokemon-single-page/pokemon-single-page.php");
                 break;
                 default:
-                    include("./page/home.php");
+                    include("./page/home/home.php");
             }
         ?>
 </body>

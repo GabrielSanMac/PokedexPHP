@@ -1,0 +1,413 @@
+/* POKEMON PAGE */
+
+.box-pokemon {
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-pokemon .left-area img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.5s;
+}
+
+.box-pokemon .left-area img:hover {
+    padding: 20px;
+}
+
+.box-pokemon .left-area h1 {
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+.box-pokemon .left-area .type-area {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-pokemon .left-area .type-area span {
+    margin: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.box-pokemon .right-area {
+    width: 40%;
+}
+
+.box-pokemon .right-area .stats-area {
+    margin-top: 15px;
+}
+
+.box-pokemon .right-area .stats-area ul {
+    list-style: none;
+}
+
+.box-pokemon .right-area .stats-area ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 0px 10px 10px 0px;
+    transition: all 0.4s;
+}
+
+.box-pokemon .right-area .stats-area ul li:hover{
+    padding: 10px;
+}
+
+.box-pokemon .right-area .stats-area ul li span {
+   font-weight: bold;
+   font-size: 14px;
+   color: #fff;
+}
+
+/* TYPES COLORS */
+
+/*BG IMG*/
+
+.box-pokemon .left-area img.grass {
+    background-color:  rgb(119, 195, 4);
+}
+
+.box-pokemon .left-area img.water {
+    background-color:  rgb(4, 128, 195);
+}
+
+.box-pokemon .left-area img.bug {
+    background-color:  rgb(199, 199, 2);
+}
+
+.box-pokemon .left-area img.dark {
+    background-color:  rgb(78, 40, 0);
+}
+
+.box-pokemon .left-area img.dragon {
+    background-color:  rgb(74, 8, 167);
+}
+
+.box-pokemon .left-area img.electric {
+    background-color:  rgb(208, 177, 0);
+}
+
+.box-pokemon .left-area img.fairy {
+    background-color:  rgb(234, 134, 237);
+}
+
+.box-pokemon .left-area img.fighting {
+    background-color:  rgba(148, 74, 1, 0.719);
+}
+
+.box-pokemon .left-area img.fire {
+    background-color:  rgb(255, 94, 0);
+}
+
+.box-pokemon .left-area img.flying {
+    background-color:  rgb(171, 226, 240);
+}
+
+.box-pokemon .left-area img.ghost {
+    background-color:  rgb(54, 55, 118);
+}
+
+.box-pokemon .left-area img.ground {
+    background-color:  rgb(121, 139, 0);
+}
+
+.box-pokemon .left-area img.ice {
+    background-color:  rgb(91, 239, 255);
+}
+
+.box-pokemon .left-area img.normal {
+    background-color:  rgb(180, 181, 158);
+}
+
+.box-pokemon .left-area img.normal {
+    background-color:  rgb(180, 181, 158);
+}
+
+.box-pokemon .left-area img.poison {
+    background-color:  rgb(102, 0, 128);
+}
+
+.box-pokemon .left-area img.psychic {
+    background-color:  rgb(188, 5, 124);
+}
+
+.box-pokemon .left-area img.rock {
+    background-color:  rgb(93, 107, 1);
+}
+
+.box-pokemon .left-area img.steel {
+    background-color:  rgb(113, 113, 113);
+}
+
+/*NAME*/
+
+.box-pokemon .left-area h1.grass {
+    background-color:  rgb(119, 195, 4);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.water {
+    background-color:  rgb(4, 128, 195);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.bug {
+    background-color:  rgb(199, 199, 2);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.dark {
+    background-color:  rgb(78, 40, 0);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.dragon {
+    background-color:  rgb(74, 8, 167);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.electric {
+    background-color:  rgb(208, 177, 0);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.fairy {
+    background-color:  rgb(234, 134, 237);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.fighting {
+    background-color:  rgba(148, 74, 1, 0.719);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.fire {
+    background-color:  rgb(255, 94, 0);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.flying {
+    background-color:  rgb(171, 226, 240);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.ghost {
+    background-color:  rgb(54, 55, 118);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.ground {
+    background-color:  rgb(121, 139, 0);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.ice {
+    background-color:  rgb(91, 239, 255);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.normal {
+    background-color:  rgb(180, 181, 158);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.normal {
+    background-color:  rgb(180, 181, 158);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.poison {
+    background-color:  rgb(102, 0, 128);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.psychic {
+    background-color:  rgb(188, 5, 124);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.rock {
+    background-color:  rgb(93, 107, 1);
+    color: #fff;
+}
+
+.box-pokemon .left-area h1.steel {
+    background-color:  rgb(113, 113, 113);
+    color: #fff;
+}
+
+/*TAGS*/
+
+.box-pokemon .left-area span {
+    color: #fff;
+}
+
+.box-pokemon .left-area .grass {
+    background-color:  rgb(119, 195, 4);
+}
+
+.box-pokemon .left-area .water {
+    background-color:  rgb(4, 128, 195);
+}
+
+.box-pokemon .left-area .bug {
+    background-color:  rgb(199, 199, 2);
+}
+
+.box-pokemon .left-area .dark {
+    background-color:  rgb(78, 40, 0);
+}
+
+.box-pokemon .left-area .dragon {
+    background-color:  rgb(74, 8, 167);
+}
+
+.box-pokemon .left-area .electric {
+    background-color:  rgb(208, 177, 0);
+}
+
+.box-pokemon .left-area .fairy {
+    background-color:  rgb(234, 134, 237);
+}
+
+.box-pokemon .left-area .fighting {
+    background-color:  rgba(148, 74, 1, 0.719);
+}
+
+.box-pokemon .left-area .fire {
+    background-color:  rgb(255, 94, 0);
+}
+
+.box-pokemon .left-area .flying {
+    background-color:  rgb(171, 226, 240);
+}
+
+.box-pokemon .left-area .ghost {
+    background-color:  rgb(54, 55, 118);
+}
+
+.box-pokemon .left-area .ground {
+    background-color:  rgb(121, 139, 0);
+}
+
+.box-pokemon .left-area .ice {
+    background-color:  rgb(91, 239, 255);
+}
+
+.box-pokemon .left-area .normal {
+    background-color:  rgb(180, 181, 158);
+}
+
+.box-pokemon .left-area .normal {
+    background-color:  rgb(180, 181, 158);
+}
+
+.box-pokemon .left-area .poison {
+    background-color:  rgb(102, 0, 128);
+}
+
+.box-pokemon .left-area .psychic {
+    background-color:  rgb(188, 5, 124);
+}
+
+.box-pokemon .left-area .rock {
+    background-color:  rgb(93, 107, 1);
+}
+
+.box-pokemon .left-area .steel {
+    background-color:  rgb(113, 113, 113);
+}
+
+
+/*stats*/
+
+.box-pokemon .right-area .stats-area ul li{
+    color: #fff;
+}
+
+.box-pokemon .right-area .stats-area ul li.grass {
+    background-color:  rgb(119, 195, 4);
+}
+
+.box-pokemon .right-area .stats-area ul li.water {
+    background-color:  rgb(4, 128, 195);
+}
+
+.box-pokemon .right-area .stats-area ul li.bug {
+    background-color:  rgb(199, 199, 2);
+}
+
+.box-pokemon .right-area .stats-area ul li.dark {
+    background-color:  rgb(78, 40, 0);
+}
+
+.box-pokemon .right-area .stats-area ul li.dragon {
+    background-color:  rgb(74, 8, 167);
+}
+
+.box-pokemon .right-area .stats-area ul li.electric {
+    background-color:  rgb(208, 177, 0);
+}
+
+.box-pokemon .right-area .stats-area ul li.fairy {
+    background-color:  rgb(234, 134, 237);
+}
+
+.box-pokemon .right-area .stats-area ul li.fighting {
+    background-color:  rgba(148, 74, 1, 0.719);
+}
+
+.box-pokemon .right-area .stats-area ul li.fire {
+    background-color:  rgb(255, 94, 0);
+}
+
+.box-pokemon .right-area .stats-area ul li.flying {
+    background-color:  rgb(171, 226, 240);
+}
+
+.box-pokemon .right-area .stats-area ul li.ghost {
+    background-color:  rgb(54, 55, 118);
+}
+
+.box-pokemon .right-area .stats-area ul li.ground {
+    background-color:  rgb(121, 139, 0);
+}
+
+.box-pokemon .right-area .stats-area ul li.ice {
+    background-color:  rgb(91, 239, 255);
+}
+
+.box-pokemon .right-area .stats-area ul li.normal {
+    background-color:  rgb(180, 181, 158);
+}
+
+.box-pokemon .right-area .stats-area ul li.normal {
+    background-color:  rgb(180, 181, 158);
+}
+
+.box-pokemon .right-area .stats-area ul li.poison {
+    background-color:  rgb(102, 0, 128);
+}
+
+.box-pokemon .right-area .stats-area ul li.psychic {
+    background-color:  rgb(188, 5, 124);
+}
+
+.box-pokemon .right-area .stats-area ul li.rock {
+    background-color:  rgb(93, 107, 1);
+}
+
+.box-pokemon .right-area .stats-area ul li.steel {
+    background-color:  rgb(113, 113, 113);
+}
