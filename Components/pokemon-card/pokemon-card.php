@@ -5,7 +5,7 @@ echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
     <div class='infoName'>
         <h1 class='name'>".strtoupper($res->results[$i]->name)."</h1>
     </div>
-    <img src=".$pokemon->getImageFromPokemon('artwork',$id).">
+    <img src=".$pokemon->getImageFromPokemon('artwork',$id)." alt=".$res->results[$i]->name.">
 </div></a>";
 
 ?>
