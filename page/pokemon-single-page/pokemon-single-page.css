@@ -411,3 +411,30 @@
 .box-pokemon .right-area .stats-area ul li.steel {
     background-color:  rgb(113, 113, 113);
 }
+
+@media only screen and (max-width: 1000px) {
+    .box-pokemon .right-area {
+        width: 100%;
+    }
+
+    .box-pokemon .right-area .stats-area ul li span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .box-pokemon {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .box-pokemon img {
+        width: 100%;
+        max-width: none;
+        min-width: none;
+    }
+
+    .box-pokemon .right-area {
+        width: 100%;
+    }
+}
