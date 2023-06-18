@@ -1,0 +1,25 @@
+.containerPageArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.selectPageArea{
+    padding: 5px;
+}
+
+.selectPageArea a {
+    padding: 5px;
+    border: 2px solid #aaa;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.selectPageArea a.thisPage {
+    background-color: rgb(174, 0, 0);
+    color: #fff;
+}

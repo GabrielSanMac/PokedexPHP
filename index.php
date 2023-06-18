@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="./Components/selected-page-area/selected-page-area.css">
     <title>PHPdex</title>
 </head>
 <body>
@@ -27,11 +28,6 @@
                 default:
                     include("./page/home.php");
             }
-
-
         ?>
-    <footer>
-        <span>Made by <a href="https://github.com/GabrielSanMac">GabrielSanMac</a> Project</span>
-    </footer>
 </body>
 </html>

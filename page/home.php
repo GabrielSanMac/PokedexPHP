@@ -25,31 +25,28 @@
             if(preg_match($regex,$PokemonList[$i]->name) || $PokemonList[$i]->name == strtolower($_POST['search'])){
                 $id = $i+1;
                 $match++;
-                echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
-                <div class='card'>
-                    <div class='infoName'>
-                        <h1 class='name'>".strtoupper($res->results[$i]->name)."</h1>
-                    </div>
-                    <img src=".$pokemon->getImageFromPokemon('artwork',$id).">
-                </div></a>";
+                include("./Components/pokemonCard/card.php");
             }
         }
         if($match <= 0) {
             echo "404 POKEMON NOT FOUND";
         }
     } else {
-        $res = $pokemon->getAllPokemons(0,1010);
-        for($i = 0; $i < count($res->results);$i++){
-            $id = $i+1;
-            echo "<a href='?page=pokemon-single-page&&pokemon=".$res->results[$i]->name."'>
-            <div class='card'>
-                <div class='infoName'>
-                    <h1 class='name'>".strtoupper($res->results[$i]->name)."</h1>
-                </div>
-                <img src=".$pokemon->getImageFromPokemon('artwork',$id).">
-            </div></a>";
+        $page_num = $_GET['page_num'];
+        if($page_num > 41){
+            echo "Page Not Found";
+        } else {
+            $limit = 24;
+            $offset = $limit*$page_num;
+            $id = $offset;
+            $res = $pokemon->getAllPokemons($offset,$limit);
+            for($i = 0; $i < count($res->results);$i++){
+                $id++;
+                include("./Components/pokemon-card/pokemon-card.php");
+            } ?></div><?php
+            include('./Components/selected-page-area/selected-page-area.php');
+            }
         }
-    }
     ?>
     </div>
 </body>
