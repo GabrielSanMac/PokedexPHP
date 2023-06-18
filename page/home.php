@@ -25,7 +25,7 @@
             if(preg_match($regex,$PokemonList[$i]->name) || $PokemonList[$i]->name == strtolower($_POST['search'])){
                 $id = $i+1;
                 $match++;
-                include("./Components/pokemonCard/card.php");
+                include("./Components/pokemon-card/pokemon-card.php");
             }
         }
         if($match <= 0) {
